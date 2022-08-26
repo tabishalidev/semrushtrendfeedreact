@@ -1,0 +1,160 @@
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: #e5e5e5;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  #sidebar {
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    padding-left: 140px;
+  }
+  
+  .titles {
+    top: 15px;
+    font-weight: bold;
+    padding-left: 150px;
+    position: fixed;
+  }
+  
+  .accordion-selected-toggle:hover {
+    background: #e0e1e9;
+    border-radius: 6px;
+  }
+  
+  .accordion-selected-toggle-savedtrend {
+    background: white;
+    border-radius: 6px;
+  }
+  
+  .accordion-selected-toggle:focus {
+    background: #ffffff;
+    border-radius: 6px;
+  }
+  
+  .bookmark {
+    padding-right: 50px;
+  }
+  
+  hr {
+    background-color: #e0e1e9;
+  }
+  
+  #topbar {
+    display:flex;
+    padding-top: 30px;
+    padding-left: 455px;
+   
+  }
+
+  #searchbar {
+    width: 85%;
+    margin-right: 15px;
+  } 
+  
+  #content {
+    padding-left: 455px;
+    padding-top: 10px;
+  }
+  
+  #level {
+    padding-top: 50px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+  
+  .g {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .y {
+    color: goldenrod;
+    font-weight: bold;
+  }
+  .r {
+    color: red;
+    font-weight: bold;
+  }
+
+  .tc {
+    margin-bottom: 5px;
+  }
+  
+  .sectiontitle {
+    padding-left: 8px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  #card {
+    display: flex;
+    position: relative;
+    margin-top: -15px;
+  }
+
+  #card2 {
+    display: flex;
+    position: relative;
+    margin-top: -15px;
+  }
+
+  
+  
+  #share Button {
+    margin-top: 5px;
+    float: right;
+    background-color: white;
+    border: 0px;
+  }
+  
+  #save Button {
+    margin-top: 5px;
+    float: left;
+    background-color: #e5e5e5;
+    width: 65px;
+  }
+
+  #sbm {
+    margin-right: 1px;
+  }
+  
+  #card p {
+    font-size: 11px;
+  }
+  
+  #savetrendbar {
+    display: flex;
+    padding-top: 7px;
+    padding-left: 455px;
+  }
+  
+  #savetrendcontent {
+    padding-left: 455px;
+    margin-top: 125px;
+    text-align: center;
+    color: #6c6e79;
+  }
+  
+  #savetrendcontent h4 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+  }
+  
+  #savetrendcontent Button {
+    margin-top: 10px;
+  }
+
+  
+  #ffl{
+    color: #EF9800;
+  }

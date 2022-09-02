@@ -20,6 +20,10 @@ import Button from "@semcore/ui/button";
 import SearchM from "@semcore/icon/Search/m";
 
 import CardFull from '../components/CardFull';
+import { Row } from '@semcore/ui/grid';
+import { Col } from '@semcore/ui/grid';
+
+import AVData from '../data/avdata.json';
 
 
 
@@ -34,12 +38,20 @@ function Home() {
         setFavoriteIcon(<FavoriteFilledL id="ffl"></FavoriteFilledL>)
         setAddFeedText('Remove from Favorite Feeds')
     }
+
+    const steps = [];
+    for (let i = 1; i <= 3; i++) {
+      steps.push(<Col md={4}>
+              <CardFull></CardFull>
+            </Col>);
+    }
   
 
   return (
     <>
     <body id="trendfeed">
         <h2 class="titles">Trends</h2>
+
         <div id="sidebar">
           <Accordion>
             <Accordion.Item>
@@ -159,24 +171,26 @@ function Home() {
           <SearchBar id="sc"></SearchBar>
         </div> */}
 
+
         <div id="content">
           <h4 class="tc">Trending Content</h4>
           <Tooltip title={addfeedText} onClick={handleClick}>
             {FavoriteIcon}
           </Tooltip>
-          <span class="sectiontitle">Trend Sample</span>
+          <span class="sectiontitle">
+              {
+                  AVData.map ( (data) => {
+                    return(
+                      data.title
+                    )
+                  })
+                }
+          </span>
 
-          <div id="card">
-            <CardFull></CardFull>
-            <CardFull></CardFull>
-            <CardFull></CardFull>
-          </div>
 
-          <div id="card2">
-            <CardFull></CardFull>
-            <CardFull></CardFull>
-            <CardFull></CardFull>
-          </div>
+          <CardFull></CardFull>
+
+        
         </div>
       </body>
     </>
